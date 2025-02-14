@@ -18,10 +18,7 @@
     text-transform: capitalize;
     transition: all .2s linear;
 }
-img{
-    width: 50%;
-    height: 50%;
-}
+
 
 
 html{
@@ -32,9 +29,28 @@ html{
 }
 
 section{
-    padding: 2rem 9%;
+    padding:2rem 9%;
 }
 
+section:nth-child(even){
+    background: #eee;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .9rem .5rem;
+}
+
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
 
 header{
     position: fixed;
@@ -151,7 +167,47 @@ header .icons #menu-bars{
     font-size: 5rem;
 }
 
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 8em;
+}
 
+.home .home-slider .slide .content{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .content span{
+    color: var(--green);
+    font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3{
+    color: var(--black);
+    font-size: 7rem;
+}
+
+.home .home-slider .slide .content p{
+    color: var(--light-color);
+    font-size: 2.2rem;
+    padding:.5rem 0 ;
+    line-height: 2.5rem;
+}
+.home .home-slider .slide .image{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img {
+    width: 100%; /* Ensures the image fits within its container */
+   
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--green);
+
+}
 
 
 
@@ -229,11 +285,24 @@ header .icons #menu-bars{
         margin: 0 1rem;
     }
 
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+
+
+    
 }
 
 @media(max-width:991px){
     html{
         font-size: 50%;
         
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
     }
 }
