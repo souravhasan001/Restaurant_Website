@@ -557,9 +557,7 @@ header .icons #menu-bars{
     border: .1rem solid var(--green);
 }
 .order form .inputBox .input textarea{
-  {
-    border: .1rem solid var(--green);
-  }  height: 20rem;
+    height: 20rem;
     resize: none;
 }
 .order form .btn{
